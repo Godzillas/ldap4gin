@@ -3,7 +3,7 @@ package ldap4gin
 import (
 	"encoding/gob"
 	"github.com/go-ldap/ldap/v3"
-	"regexp"
+	// "regexp"
 )
 
 // User depicts profile of authorized user
@@ -64,9 +64,9 @@ func GetDefaultFields() []string {
 	}
 }
 
-var usernameRegexp *regexp.Regexp
+//var usernameRegexp *regexp.Regexp
 
 func init() {
 	gob.Register(User{})
-	usernameRegexp = regexp.MustCompile("^[0-9A-Za-z_]+$")
+	//usernameRegexp = regexp.MustCompile("^[0-9A-Za-z_]+$")
 }
