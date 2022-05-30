@@ -1,4 +1,4 @@
-module github.com/vodolaz095/ldap4gin
+module github.com/godzillas/ldap4gin
 
 go 1.16
 
